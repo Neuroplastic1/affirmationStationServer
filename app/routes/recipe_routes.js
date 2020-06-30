@@ -29,7 +29,7 @@ const router = express.Router()
 
 // INDEX
 // GET /examples
-router.get('/recipes', requireToken, (req, res, next) => {
+router.get('/recipes', (req, res, next) => {
   Recipe.find()
     .then(recipes => {
       // `examples` will be an array of Mongoose documents
@@ -50,7 +50,7 @@ router.get('/recipes/:id', requireToken, (req, res, next) => {
   Recipe.findById(req.params.id)
     .then(handle404)
     // if `findById` is succesful, respond with 200 and "example" JSON
-    .then(recipe => res.status(200).json({ example: recipe.toObject() }))
+    .then(recipe => res.status(200).json({ recipe: recipe.toObject() }))
     // if an error occurs, pass it to the handler
     .catch(next)
 })
