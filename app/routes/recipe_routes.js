@@ -28,11 +28,11 @@ const requireToken = passport.authenticate('bearer', { session: false })
 const router = express.Router()
 
 // INDEX
-// GET /examples
+// GET /
 router.get('/recipes', (req, res, next) => {
   Recipe.find()
     .then(recipes => {
-      // `examples` will be an array of Mongoose documents
+      // `recipes` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
       // apply `.toObject` to each one
       return recipes.map(recipe => recipe.toObject())
@@ -57,9 +57,9 @@ router.get('/recipes/:id', requireToken, (req, res, next) => {
 
 // CREATE
 // POST /examples
-router.post('/recipe', requireToken, (req, res, next) => {
+router.post('/recipes', requireToken, (req, res, next) => {
   // set owner of new example to be current user
-  req.body.example.owner = req.user.id
+  req.body.recipe.owner = req.user.id
 
   Recipe.create(req.body.recipe)
     // respond to succesful `create` with status 201 and JSON of new "example"
