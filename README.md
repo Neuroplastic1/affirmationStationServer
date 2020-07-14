@@ -2,7 +2,8 @@
 
 # Affirmation Station
 # Links:
-front-end: https://neuroplastic1.github.io/affirmationStationClient/
+front-end deployed: https://neuroplastic1.github.io/affirmationStationClient/
+front-end repository: https://github.com/Neuroplastic1/affirmationStationClient
 ## Technologies Used
 
 - Node.js
@@ -13,3 +14,7 @@ front-end: https://neuroplastic1.github.io/affirmationStationClient/
 # ERD
 
 ![IMG_0887](https://user-images.githubusercontent.com/64027495/87382930-2ff2d180-c566-11ea-9e12-5fcd838404a7.JPG)
+
+## Planning and Building process 
+
+I aproached creating this app by making a approximate time plan of the process i first set up my server side curls & routes and schema and then focused on Client side. On client side I first added all athentication forms and affirmation create & update froms to html, i used Jquery for event handling and ui flow and used ajax for handling api requests and responses from server side. in the end i sued css to add background image and aligning the forms and data resources.
