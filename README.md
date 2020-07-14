@@ -2,8 +2,9 @@
 
 # Affirmation Station
 # Links:
-front-end deployed: https://neuroplastic1.github.io/affirmationStationClient/
-front-end repository: https://github.com/Neuroplastic1/affirmationStationClient
+Client-side deployed: https://neuroplastic1.github.io/affirmationStationClient/
+Client-side repository: https://github.com/Neuroplastic1/affirmationStationClient
+Server_side deployed: https://salty-anchorage-82122.herokuapp.com/
 ## Technologies Used
 
 - Node.js
