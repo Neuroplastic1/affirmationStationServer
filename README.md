@@ -19,13 +19,12 @@ This app let's user note inspirations gathered in different contexts to reflect 
 - Mongoose
 
 ## Planning and Building process 
-For this app 
+I started building this server by laying out an approximately timed 
 
 
 # ERD
 
 ![IMG_0887](https://user-images.githubusercontent.com/64027495/87382930-2ff2d180-c566-11ea-9e12-5fcd838404a7.JPG)
 
-## Unresolve issues
-
-Because of importing the background image through external link, each page takes quiet long time to load. in the future I would like to add an image 
+## Unresolved actions
+Would love to add a few more subdocument to the user schema enabling adding images of inspiration with context input option and reference scema to add comments to inspiring images.
