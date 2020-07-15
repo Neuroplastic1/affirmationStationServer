@@ -19,7 +19,7 @@ This app let's user note inspirations gathered in different contexts to reflect 
 - Mongoose
 
 ## Planning and Building process 
-I started building this server by laying out an approximately timed 
+I started building this server by laying out an approximately timed planned for schemas and routes. I tested all schema and routes by CRUDing through the commandline terminal.
 
 
 # ERD
